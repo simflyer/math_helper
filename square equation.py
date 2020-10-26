@@ -10,5 +10,6 @@ while True:
     a = float(input("Enter first term (a): "))
     b = float(input("Enter second term (b): "))
     c = float(input("Enter third term (c): "))
-    print(root(a, b, c))
+    res = root(a, b, c)
+    print("Here is the result: " + str(res))
 
