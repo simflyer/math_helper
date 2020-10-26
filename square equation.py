@@ -7,9 +7,11 @@ def root(a, b, c): #gets an input of square equation terms and counts the root
 
 
 while True:
-    a = float(input("Enter first term (a): "))
-    b = float(input("Enter second term (b): "))
-    c = float(input("Enter third term (c): "))
-    res = root(a, b, c)
-    print("Here is the result: " + str(res))
-
+    try:
+        a = float(input("Enter first term (a): "))
+        b = float(input("Enter second term (b): "))
+        c = float(input("Enter third term (c): "))
+        res = root(a, b, c)
+        print("Here is the result: " + str(res))
+    except ValueError:
+        print("This equation does not have root")
