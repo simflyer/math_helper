@@ -10,13 +10,13 @@ def cath(c, a): # counts cathetus
 
 def cath_cos(c, x): #counts cathetus with a known angle measured in degrees
     rad = math.radians(x) #converts the output in degrees to radians
-    cos = math.cos(x) #counts the cos of an angle
+    cos = math.cos(rad) #counts the cos of an angle
     cat = c * cos #counts the cathetus
     return cat
 
 def cath_sin(c, x): #counts cathetus with a known angle measured in degrees
     rad = math.radians(x)  # converts the output in degrees to radians
-    sin = math.sin(x)  # counts the sin of an angle
+    sin = math.sin(rad)  # counts the sin of an angle
     cat = c * sin  # counts the cathetus
     return cat
 
