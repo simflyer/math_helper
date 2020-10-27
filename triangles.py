@@ -10,13 +10,13 @@ def cath(c, a): # counts cathetus
    return b
 
 def cath_cos(c, x): #counts cathetus with a known angle measured in degrees
-    rad = math.radians(x) #converts the output in degrees to radians
+    rad = math.radians(x) #converts the input in degrees to radians
     cos = math.cos(rad) #counts the cos of an angle
     cat = c * cos #counts the cathetus
     return cat
 
 def cath_sin(c, x): #counts cathetus with a known angle measured in degrees
-    rad = math.radians(x)  # converts the output in degrees to radians
+    rad = math.radians(x)  # converts the input in degrees to radians
     sin = math.sin(rad)  # counts the sin of an angle
     cat = c * sin  # counts the cathetus
     return cat
@@ -26,7 +26,7 @@ def cath_sin(c, x): #counts cathetus with a known angle measured in degrees
 while True:
    action = str(input(
        " \n "
-       "Choose an action, print an appropriate number and press enter\n"
+       "Choose an action, enter an appropriate number and press enter\n"
        "1 - count hypothenuse\n"
        "2 - count cathetus\n"
        "3 - count cathetus with cos\n"
